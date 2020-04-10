@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+<html lang="en">
+   <head>
+     <title>closure</title>
+	 <script src="jquery.js"></script>
+	 <script type="text/javascript">
+		function addno(f,l){
+			var r="result is : ";
+			function add()
+			{
+			 return r+((f*1)+(l*1));
+			}
+		return add();
+		}
+		function cal(){
+			var v1 = document.getElementById('v1').value;
+			var v2 = document.getElementById('v2').value;
+			
+			document.getElementById('i').innerHTML="result is : "+((v1*1)+(v2*1));
+			 }
+	</script>
+	
+   </head>
+   <body>
+		<input type="number" placeholder="enter value 1" id="v1">
+		<input type="number" placeholder="enter value 2" id="v2">
+		<button onclick="cal(v1,v2)">calculate</button><br>
+		<p id="i"></p>
+		<script>
+			var a=prompt('first no.');
+			var b=prompt('second no.');
+			var a=addno(a,b);
+			document.getElementById('i').innerHTML=a;
+		</script>
+		
+   </body>
+</html>

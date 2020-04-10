@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<html lang="en">
+   <head>
+     <title>square</title>
+	 <script src="jquery.js"></script>
+	 <script type="text/javascript">
+		function square(y){
+			return y*y;
+		}
+		function cal(x){
+			var c=square(x);
+			document.write(c);
+		}
+	</script>
+	
+   </head>
+   <body>
+		<input type="number" placeholder="enter value " id="v">
+		<button onclick="cal(document.getElementById('v').value)">calculate</button>
+		<br>square =
+		<script>
+			var a=prompt("enter value");
+			var b=square(a);
+			document.write(b);
+		</script>
+		
+   </body>
+</html>

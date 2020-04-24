@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+     <title>rolling of dice</title>
+	 <script type="text/javascript">
+		var v;
+		
+		function r(){
+			v=Math.floor(1+Math.random()*6);
+			document.getElementById('s').innerHTML=v;
+		}
+		
+	</script>
+	
+   </head>
+   <body>
+	
+	 <button onclick="r()">click to get a random value</button>
+	 <p id="s"></p>
+   </body>
+</html>
